@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="icon" href="">
+    <script type="module" src="script.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div id = "players">
+          <p>How do you want to play?</p>
+          <div id = "onePlayer" onclick = "numPlayers(0);"><p>One<br>Player</p></div>
+          <div id = "twoPlayer" onclick = "numPlayers(1);"><p>Two Players</p></div>
+        </div>
+        <div id = "XOXO">
+          <p id = "textXO">Would you like to be X or O?</p>
+          <div class = "xoro">
+            <span id = "X" onclick = "XorO('X');"><p>X</p></span>
+            <span id = "O" onclick = "XorO('O');"><p>O</p></span>
+            <span id = "backB" onclick = "XorO('back');"><p>&lt;- Back</p></span>
+          </div>
+        </div>
+        <div id = "game">
+          <div class = "turnBut">
+            <div id = "turn">Your turn</div>
+            <div id = "reset" onclick = "reset();">Reset All</div>
+          </div>
+          <div class = "board">
+            <table cellspacing="0">
+              <tr>
+                <td id = "A1" onclick = "gridClick('A1', 0)"></td>
+                <td id = "B1" onclick = "gridClick('B1', 1)"></td>
+                <td id = "C1" onclick = "gridClick('C1', 2)"></td>
+              </tr>
+              <tr>
+                <td id = "A2" onclick = "gridClick('A2', 3)"></td>
+                <td id = "B2" onclick = "gridClick('B2', 4)"></td>
+                <td id = "C2" onclick = "gridClick('C2', 5)"></td>
+              </tr>
+              <tr>
+                <td id = "A3" onclick = "gridClick('A3', 6)"></td>
+                <td id = "B3" onclick = "gridClick('B3', 7)"></td>
+                <td id = "C3" onclick = "gridClick('C3', 8)"></td>
+              </tr>
+            </table>
+          </div>
+          <div id = "count">
+            <div><span id = "player1">Player1: </span><span id = "count1">0</span><span> , </span><span id = "player2">Player2: </span><span id = "count2">0</span></div>
+          </div>   
+        </div>
+        <div id = "win">You win!</div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

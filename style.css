@@ -1,0 +1,169 @@
+body {
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 50px !important;
+    color: white !important;
+    font-weight: bold !important;
+    background-image: url("https://www.icexport.com/wp-content/uploads/2016/02/Asphalt_dark-014-1024x682.jpg");
+    position: relative;
+  }
+  
+  #players {
+    /*border: 1px solid white;*/
+    position: absolute;
+    padding: 1px;
+    background: black;
+    -webkit-box-shadow: 0 0 30px 20px black;
+    -moz-box-shadow: 0 0 30px 20px black;
+    box-shadow: 0 0 30px 20px black; 
+    opacity: 0.65;
+    width: 50%;
+    margin: 10% 25%;
+    text-align: center;
+    /*visibility: hidden;*/
+  }
+  #onePlayer p,
+  #twoPlayer p {
+    border: 5px solid black;
+    float:left; 
+    margin-left: 13px;
+    width: 45%;
+  }
+  #onePlayer p:hover,
+  #twoPlayer p:hover {
+    border: 5px groove white;
+    border-radius: 55px 55px;
+    cursor: pointer;
+  } 
+  #XOXO {
+    /*border: 1px solid white;*/
+    position: absolute;
+    width:50%;
+    background: black;
+    -webkit-box-shadow: 0 0 30px 20px black;
+    -moz-box-shadow: 0 0 30px 20px black;
+    box-shadow: 0 0 30px 20px black; 
+    opacity: 0.65;
+    margin: 10% 25%;
+    text-align: center;
+    visibility: hidden;
+  }
+  #X p,
+  #O p, 
+  #backB p{
+    float:left; 
+    margin: 10px 0 7px 10%;
+    border: 5px solid black;
+    width: 37%;
+  }
+  #backB p {
+    margin: 1% 25%;
+    width: 50%;
+  }
+  #X p:hover,
+  #O p:hover,
+  #backB p:hover{
+    border: 5px groove white;
+    border-radius: 55px 55px;
+    cursor: pointer;
+  } 
+  #game {
+    position: absolute;
+    width: 50%;
+    /*border: 5px solid white;*/
+    margin: 5% 25% 0;
+    text-align: center;
+    visibility: hidden;
+  }
+  .turnBut {
+    /*position: absolute;*/
+    /*border: 2px solid white;*/
+    width: 100%;
+    margin: auto;
+  }
+  #turn {
+    float:left; 
+    margin: 1px 23px;
+    border: 5px groove white;
+    border-radius: 55px 55px;
+    width: 55%;
+    margin-bottom: 30px;
+  }
+  #reset {
+    float:left;
+    width: 33%;
+    border: 5px groove white;
+    border-radius: 55px 55px;
+  }
+  #reset:hover {
+    cursor: pointer;
+    border: 5px groove black;
+    border-radius: 55px 55px;
+    color: black;
+  }
+  table {
+     width: 90%;
+    /*position: absolute;*/
+    margin: 130px auto 0;
+    /*border: 5px groove white;*/
+    font-size: 100px;
+  }
+  td {
+    width: 30%;
+    height: 180px;
+    padding: 0;
+    border: 4px solid white;
+    text-align: center;
+  }
+  td:hover {
+    cursor: pointer;
+  }
+  #A1 {
+    border-top: 0;
+    border-left: 0;
+  }
+  #A2 {
+    border-left: 0;
+  }
+  #A3 {
+    border-bottom: 0;
+    border-left: 0;
+  }
+  #B1 {
+    border-top: 0;
+  }
+  #B3 {
+    border-bottom: 0;
+  }
+  #C1 {
+    border-top: 0;
+    border-right: 0;
+  }
+  #C2 {
+    border-right: 0;
+  }
+  #C3 {
+    border-bottom: 0;
+    border-right: 0;
+  }
+  /* .count{
+    position: absolute;
+  } */
+  #win {
+    position: absolute;
+    padding: 240px 0;
+    background: black;
+    -webkit-box-shadow: 0 0 30px 20px black;
+    -moz-box-shadow: 0 0 30px 20px black;
+    box-shadow: 0 0 30px 20px black; 
+    opacity: 0.9;
+    width: 50%;
+    /*height: 500px;*/
+    margin: 14% 25% 0;
+    text-align: center;
+    visibility: hidden;
+  }
+  @keyframes poster {
+  from {visibility: hidden;}
+  50% {visibility: visible;}
+  to {visibility: hidden;}
+  }
