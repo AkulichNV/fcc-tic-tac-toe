@@ -3,12 +3,11 @@ body {
     font-size: 50px !important;
     color: white !important;
     font-weight: bold !important;
-    background-image: url("https://www.icexport.com/wp-content/uploads/2016/02/Asphalt_dark-014-1024x682.jpg");
+    background-image: url("./assets/img/asphalt.jpg");
     position: relative;
   }
   
   #players {
-    /*border: 1px solid white;*/
     position: absolute;
     padding: 1px;
     background: black;
@@ -19,7 +18,6 @@ body {
     width: 50%;
     margin: 10% 25%;
     text-align: center;
-    /*visibility: hidden;*/
   }
   #onePlayer p,
   #twoPlayer p {
@@ -35,7 +33,6 @@ body {
     cursor: pointer;
   } 
   #XOXO {
-    /*border: 1px solid white;*/
     position: absolute;
     width:50%;
     background: black;
@@ -69,14 +66,11 @@ body {
   #game {
     position: absolute;
     width: 50%;
-    /*border: 5px solid white;*/
     margin: 5% 25% 0;
     text-align: center;
     visibility: hidden;
   }
   .turnBut {
-    /*position: absolute;*/
-    /*border: 2px solid white;*/
     width: 100%;
     margin: auto;
   }
@@ -101,10 +95,8 @@ body {
     color: black;
   }
   table {
-     width: 90%;
-    /*position: absolute;*/
+    width: 90%;
     margin: 130px auto 0;
-    /*border: 5px groove white;*/
     font-size: 100px;
   }
   td {
@@ -145,9 +137,6 @@ body {
     border-bottom: 0;
     border-right: 0;
   }
-  /* .count{
-    position: absolute;
-  } */
   #win {
     position: absolute;
     padding: 240px 0;
@@ -157,7 +146,6 @@ body {
     box-shadow: 0 0 30px 20px black; 
     opacity: 0.9;
     width: 50%;
-    /*height: 500px;*/
     margin: 14% 25% 0;
     text-align: center;
     visibility: hidden;
